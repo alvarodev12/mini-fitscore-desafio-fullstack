@@ -2,7 +2,13 @@
 
 Solução completa para um desafio técnico, construindo uma aplicação com front-end, banco de dados na nuvem e automações de back-end.
 
-**[Link para o Deploy Público] (Vamos adicionar este link no próximo passo)**
+**[Link para o Deploy Público]**
+
+Para o Formulário:
+https://mini-fitscore-desafio-r9xkso7gw-alvaro-souzas-projects.vercel.app/formulario/
+
+Para o Dashboard:
+https://mini-fitscore-desafio-r9xkso7gw-alvaro-souzas-projects.vercel.app/dashboard/dashboard.html
 
 ---
 
