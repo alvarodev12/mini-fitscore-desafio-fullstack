@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <title>Desafio FitScore | LEGAL</title>
+</head>
+
+<body>
+        <div class="container">
+                <img src="../assets/logo.png" alt="Logo LEGAL" class="logo">
+                <h1>Formulário FitScore</h1>
+                <p class="subtitle">Descubra se você tem o DNA LEGAL</p>
+
+                <form id="fitscore-form">
+                        <div class="question">
+                                <p>Nome completo:</p>
+                                <input type="text" id="candidato-nome" class="email-input"
+                                        placeholder="Seu Nome Completo" required>
+                        </div>
+                        <div class="question">
+                                <p>Seu e-mail:</p>
+                                <input type="email" id="candidato-email" class="email-input"
+                                        placeholder="seu.nome@exemplo.com" required>
+                        </div>
+
+                        <section class="form-section">
+                                <h2>Performance: Execução & Inovação</h2>
+                                <div class="question">
+                                        <p>1. Diante de um mercado que "Exige Inovação", como você age?</p>
+                                        <div class="options">
+                                                <label class="option-card">
+                                                        <input type="radio" name="q1" data-score="2" required><span
+                                                                class="option-label">Prefiro métodos já
+                                                                testados e comprovados para garantir
+                                                                estabilidade.</span>
+                                                </label>
+                                                <label class="option-card">
+                                                        <input type="radio" name="q1" data-score="6"><span
+                                                                class="option-label">Busco por
+                                                                novas tecnologias e métodos quando uma tarefa se torna
+                                                                ineficiente.</span>
+                                                </label>
+                                                <label class="option-card">
+                                                        <input type="radio" name="q1" data-score="10"><span
+                                                                class="option-label">Estou
+                                                                constantemente experimentando, propondo e implementando
+                                                                novas
+                                                                formas de resolver problemas.</span>
+                                                </label>
+                                        </div>
+                                </div>
+                                <div class="question">
+                                        <p>2. Nossa regra é "transformar ideias em realidade". Qual sua relação com a
+                                                execução?</p>
+                                        <div class="options">
+                                                <label class="option-card">
+                                                        <input type="radio" name="q2" data-score="1" required><span
+                                                                class="option-label">Tenho ótimas ideias,
+                                                                mas geralmente preciso de ajuda para
+                                                                colocá-las em prática.</span>
+                                                </label>
+                                                <label class="option-card">
+                                                        <input type="radio" name="q2" data-score="7"><span
+                                                                class="option-label">Sou bom em
+                                                                seguir um plano e entregar as tarefas que me são
+                                                                designadas.</span>
+                                                </label>
+                                                <label class="option-card">
+                                                        <input type="radio" name="q2" data-score="10"><span
+                                                                class="option-label">Sou um(a)
+                                                                "executor(a)": pego uma visão e a transformo em algo
+                                                                concreto e funcional.</span>
+                                                </label>
+                                        </div>
+                                </div>
+                                <div class="question">
+                                        <p>3. Como você lida com um objetivo audacioso, como "Conectar 195.338 pessoas
+                                                até 2030"?</p>
+                                        <div class="options">
+                                                <label class="option-card">
+                                                        <input type="radio" name="q3" data-score="2" required><span
+                                                                class="option-label">Acho metas tão
+                                                                grandes um pouco intimidantes e
+                                                                irreais.</span>
+                                                </label>
+                                                <label class="option-card">
+                                                        <input type="radio" name="q3" data-score="6"><span
+                                                                class="option-label">Foco nas
+                                                                minhas tarefas diárias que, aos poucos, contribuirão
+                                                                para
+                                                                a meta.</span>
+                                                </label>
+                                                <label class="option-card">
+                                                        <input type="radio" name="q3" data-score="10"><span
+                                                                class="option-label">Me sinto
+                                                                energizado(a)! Quebro a meta em partes menores e
+                                                                trabalho
+                                                                com senso de urgência.</span>
+                                                </label>
+                                        </div>
+                                </div>
+                        </section>
+
+                        <section class="form-section">
+                                <h2>Energia: Frequência & Resiliência</h2>
+                                <div class="question">
+                                        <p>4. Nós "vibramos em alta frequência". O que isso significa para você no dia a
+                                                dia?</p>
+                                        <div class="options">
+                                                <label class="option-card">
+                                                        <input type="radio" name="q4" data-score="1" required><span
+                                                                class="option-label">Prefiro um ambiente
+                                                                de trabalho calmo, estável e
+                                                                previsível.</span>
+                                                </label>
+                                                <label class="option-card">
+                                                        <input type="radio" name="q4" data-score="7"><span
+                                                                class="option-label">Mantenho uma
+                                                                atitude positiva e foco em resolver os problemas que
+                                                                aparecem.</span>
+                                                </label>
+                                                <label class="option-card">
+                                                        <input type="radio" name="q4" data-score="10"><span
+                                                                class="option-label">Tenho uma
+                                                                energia contagiante, sou proativo(a) e inspiro meus
+                                                                colegas a darem o seu melhor.</span>
+                                                </label>
+                                        </div>
+                                </div>
+                                <div class="question">
+                                        <p>5. Um projeto muda de direção repentinamente. Como você reage?</p>
+                                        <div class="options">
+                                                <label class="option-card">
+                                                        <input type="radio" name="q5" data-score="2" required><span
+                                                                class="option-label">Fico frustrado(a),
+                                                                pois o trabalho que fiz até agora pode ter sido
+                                                                em vão.</span>
+                                                </label>
+                                                <label class="option-card">
+                                                        <input type="radio" name="q5" data-score="6"><span
+                                                                class="option-label">Levo um tempo
+                                                                para me adaptar, mas entendo a necessidade da
+                                                                mudança.</span>
+                                                </label>
+                                                <label class="option-card">
+                                                        <input type="radio" name="q5" data-score="10"><span
+                                                                class="option-label">Me adapto
+                                                                rapidamente, vejo como uma oportunidade e realinho meu
+                                                                foco para o novo objetivo.</span>
+                                                </label>
+                                        </div>
+                                </div>
+                                <div class="question">
+                                        <p>6. O que significa "Execução Energizada"?</p>
+                                        <div class="options">
+                                                <label class="option-card">
+                                                        <input type="radio" name="q6" data-score="3" required><span
+                                                                class="option-label">Trabalhar muitas
+                                                                horas para entregar tudo o mais rápido
+                                                                possível.</span>
+                                                </label>
+                                                <label class="option-card">
+                                                        <input type="radio" name="q6" data-score="7"><span
+                                                                class="option-label">Ser eficiente
+                                                                e focado para cumprir os prazos
+                                                                estabelecidos.</span>
+                                                </label>
+                                                <label class="option-card">
+                                                        <input type="radio" name="q6" data-score="10"><span
+                                                                class="option-label">Ter
+                                                                velocidade e intensidade, com paixão e qualidade, para
+                                                                superar
+                                                                as expectativas.</span>
+                                                </label>
+                                        </div>
+                                </div>
+                        </section>
+
+                        <section class="form-section">
+                                <h2>Cultura: Propósito & Coragem</h2>
+                                <div class="question">
+                                        <p>7. "Somos mais que uma empresa de tecnologia... somos criadores de valor". O
+                                                que você busca em um
+                                                trabalho?</p>
+                                        <div class="options">
+                                                <label class="option-card">
+                                                        <input type="radio" name="q7" data-score="1" required>
+                                                        <span class="option-label">Estabilidade e um
+                                                                bom salário são minhas
+                                                                prioridades.</span>
+                                                </label>
+                                                <label class="option-card">
+                                                        <input type="radio" name="q7" data-score="6"><span
+                                                                class="option-label">Desenvolvimento técnico e
+                                                                oportunidades de aprender novas
+                                                                tecnologias.</span>
+                                                </label>
+                                                <label class="option-card">
+                                                        <input type="radio" name="q7" data-score="10"><span
+                                                                class="option-label">Fazer parte
+                                                                de algo maior, com um propósito claro, e ver meu
+                                                                trabalho gerar impacto real.</span>
+                                                </label>
+                                        </div>
+                                </div>
+                                <div class="question">
+                                        <p>8. Nós "agimos com coragem". O que isso te inspira a fazer?</p>
+                                        <div class="options">
+                                                <label class="option-card">
+                                                        <input type="radio" name="q8" data-score="2" required><span
+                                                                class="option-label">Evitar riscos para
+                                                                não cometer erros que possam comprometer o
+                                                                projeto.</span>
+                                                </label>
+                                                <label class="option-card">
+                                                        <input type="radio" name="q8" data-score="7"><span
+                                                                class="option-label">Dar minha
+                                                                opinião em reuniões, mesmo que seja diferente da
+                                                                maioria.</span>
+                                                </label>
+                                                <label class="option-card">
+                                                        <input type="radio" name="q8" data-score="10"><span
+                                                                class="option-label">Assumir a
+                                                                responsabilidade por projetos desafiadores e tomar
+                                                                decisões difíceis quando necessário.</span>
+                                                </label>
+                                        </div>
+                                </div>
+                                <div class="question">
+                                        <p>9. Sobre receber feedback do seu trabalho:</p>
+                                        <div class="options">
+                                                <label class="option-card">
+                                                        <input type="radio" name="q9" data-score="1" required><span
+                                                                class="option-label">Fico desconfortável
+                                                                e, às vezes, levo para o lado
+                                                                pessoal.</span>
+                                                </label>
+                                                <label class="option-card">
+                                                        <input type="radio" name="q9" data-score="7"><span
+                                                                class="option-label">Escuto
+                                                                atentamente e agradeço, refletindo sobre os pontos
+                                                                levantados.</span>
+                                                </label>
+                                                <label class="option-card">
+                                                        <input type="radio" name="q9" data-score="10"><span
+                                                                class="option-label">Busco
+                                                                ativamente por feedback, pois vejo como a ferramenta
+                                                                mais
+                                                                rápida para o meu crescimento.</span>
+                                                </label>
+                                        </div>
+                                </div>
+                                <div class="question">
+                                        <p>10. Por que você quer "Ser LEGAL"?</p>
+                                        <div class="options">
+                                                <label class="option-card">
+                                                        <input type="radio" name="q10" data-score="1" required><span
+                                                                class="option-label">Parece ser uma boa
+                                                                oportunidade de emprego na área de
+                                                                tecnologia.</span>
+                                                </label>
+                                                <label class="option-card">
+                                                        <input type="radio" name="q10" data-score="6"><span
+                                                                class="option-label">Quero
+                                                                trabalhar em uma empresa com "Produtos LEGALmente
+                                                                Incríveis"
+                                                                e desafios técnicos.</span>
+                                                </label>
+                                                <label class="option-card">
+                                                        <input type="radio" name="q10" data-score="10"><span
+                                                                class="option-label">Porque quero fazer parte de uma
+                                                                cultura que 'vibra em alta frequência', age com coragem
+                                                                e está focada em construir algo
+                                                                realmente inovador</span>
+                                                </label>
+                                        </div>
+                                </div>
+                        </section>
+
+                        <button type="submit">Calcular FitScore</button>
+
+                        <div id="resultado-final" class="result-container">
+                                <h3>Seu FitScore:</h3>
+                                <span class="score" id="score-value"></span>
+                                <p class="classification" id="classification-value"></p>
+                        </div>
+                </form>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</body>
+
+
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,205 @@
+:root {
+    --color-primary: #0026F5;
+    --color-secondary: #E9E9FF;
+    --color-text: #333;
+    --color-bg: #f9f9f9;
+    --color-card-bg: #fff;
+    --color-border: #ddd;
+    --color-logo-bg: #001270;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-text);
+}
+
+body {
+    background-color: var(--color-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: var(--color-card-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    padding: 40px;
+    text-align: center;
+}
+
+.logo {
+    background-color: var(--color-logo-bg);
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 120px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: var(--color-primary);
+    font-size: 2.5rem;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.form-section {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.form-section h2 {
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: var(--color-primary);
+}
+
+.question {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.question p {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.email-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.option-card:hover {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 8px rgba(0, 38, 245, 0.2);
+}
+
+.option-card input[type="radio"] {
+    display: none;
+}
+
+.option-card input[type="radio"]:checked+.option-label {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.option-card input[type="radio"]:checked+.option-label::before {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.option-label {
+    flex-grow: 1;
+    font-size: 1rem;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.option-label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--color-border);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.result-container {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: var(--color-secondary);
+    display: none;
+    /* Começa escondido */
+}
+
+.result-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.result-container .score {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.result-container .classification {
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.classification.fit-altissimo {
+    color: #28a745;
+}
+
+.classification.fit-aprovado {
+    color: #007bff;
+}
+
+.classification.fit-questionavel {
+    color: #ffc107;
+}
+
+.classification.fora-do-perfil {
+    color: #dc3545;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--color-primary);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #001270;
+    transform: translateY(-2px);
+}

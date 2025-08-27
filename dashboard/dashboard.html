@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | LEGAL FitScore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <img src="../assets/logo.png" alt="Logo LEGAL" class="logo">
+        <h1>Dashboard de Candidatos</h1>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="Fit Altíssimo">Fit Altíssimo</button>
+            <button class="filter-btn" data-filter="Fit Aprovado">Fit Aprovado</button>
+            <button class="filter-btn" data-filter="Fit Questionável">Fit Questionável</button>
+            <button class="filter-btn" data-filter="Fora do Perfil">Fora do Perfil</button>
+        </div>
+
+        <div id="loading-state" class="state-message">
+            <p>Carregando candidatos...</p>
+        </div>
+        <div id="empty-state" class="state-message" style="display: none;">
+            <p>Nenhum candidato avaliado foi encontrado.</p>
+        </div>
+        <div id="error-state" class="state-message" style="display: none;">
+            <p>Ocorreu um erro ao carregar os dados. Por favor, tente novamente mais tarde.</p>
+        </div>
+
+        <div id="candidatos-list" class="candidatos-list-container">
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</body>
+
+
+
+<script src="dashboard.js"></script>
+
+</html>
