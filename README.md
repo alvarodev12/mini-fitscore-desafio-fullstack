@@ -1,14 +1,10 @@
-# Mini FitScore - Desafio Full-Stack
+# Mini FitScore - Desafio FullStack
 
-Solução completa para um desafio técnico, construindo uma aplicação com front-end, banco de dados na nuvem e automações de back-end.
+Um desafio técnico, construindo uma aplicação com front-end, banco de dados na nuvem e automações de back-end.
 
-**[Link para o Deploy Público]**
+Para o Formulário: https://mini-fitscore-desafio.vercel.app/
 
-Para o Formulário:
-https://mini-fitscore-desafio-r9xkso7gw-alvaro-souzas-projects.vercel.app/formulario/
-
-Para o Dashboard:
-https://mini-fitscore-desafio-r9xkso7gw-alvaro-souzas-projects.vercel.app/dashboard/dashboard.html
+Para o Dashboard: https://mini-fitscore-desafio.vercel.app/dashboard/dashboard.html
 
 ---
 
@@ -23,8 +19,8 @@ https://mini-fitscore-desafio-r9xkso7gw-alvaro-souzas-projects.vercel.app/dashbo
 ## ⚙️ Como Rodar o Projeto Localmente
 
 1.  Clone este repositório.
-2.  Use a extensão "Live Server" do VS Code para iniciar o arquivo `formulario/index.html`.
-3.  As chaves de API do Supabase precisam ser inseridas nos arquivos `formulario/script.js` e `dashboard/dashboard.js`.
+2.  Use a extensão "Live Server" do VS Code para iniciar o arquivo `index.html`.
+3.  As chaves de API do Supabase precisam ser inseridas nos arquivos `script.js` e `dashboard/dashboard.js`.
 
 ---
 
