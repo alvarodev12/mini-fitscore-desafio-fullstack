@@ -148,7 +148,6 @@ h1 {
     border-radius: 8px;
     background-color: var(--color-secondary);
     display: none;
-    /* Começa escondido */
 }
 
 .result-container h3 {
